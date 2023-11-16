@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import "./styles/App.css";
+import Landing from "./components/Landing";
+import { motion } from "framer-motion";
+import About from "./components/About";
+import { ReactComponent as MenuIcon } from "./svgs/hamburger-menu.svg";
+import { Divide as Hamburger } from "hamburger-react";
+import Header from "./components/Header";
+import BlendCursor from "./components/Cursor";
+import Projects from "./components/Projects";
+// import "intersection-observer";
+export default function App() {
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
+  const date = new Date().getFullYear();
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 768);
+    };
 
-function App() {
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <BlendCursor />
+      <header>
+        <Header />
       </header>
+      <Landing />
+      <About />
+      <Projects />
+      <footer className="footer">
+        <p>&copy; {date} Javaria Brascom</p>
+      </footer>
     </div>
   );
 }
-
-export default App;

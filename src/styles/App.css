@@ -1,0 +1,41 @@
+.App {
+  margin: 10px;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.h-child {
+  margin-left: 5px;
+}
+
+.h-right {
+  display: flex;
+}
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* .neon-mist {
+  position: relative;
+} */
+/* .neon-mist::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform: translateY(5px);
+  box-shadow: inset 0px 10px 20px 2px rgba(0, 255, 255, 0.7);
+  z-index: -1; 
+} */
