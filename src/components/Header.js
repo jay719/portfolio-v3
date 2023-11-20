@@ -16,7 +16,11 @@ const Header = ({ isSmallScreen, handleClick, isOpen }) => {
   };
 
   return (
-    <header>
+    <motion.header
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0, animationDelay: 0.8 }}
+      transition={{ delay: 0.6 }}
+    >
       <div id="header-top">
         <div className="h-left">
           <MotionMenuBtn
@@ -52,7 +56,7 @@ const Header = ({ isSmallScreen, handleClick, isOpen }) => {
           <li>Item 5</li>
         </ul>
       </motion.div>
-    </header>
+    </motion.header>
   );
 };
 
