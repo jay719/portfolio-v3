@@ -1,48 +1,20 @@
-import React, { useEffect, useState } from "react";
-import "../styles/App.css";
-import { motion } from "framer-motion";
-import { Spin as Hamburger } from "hamburger-react";
+import React, { useEffect, useRef, useState } from "react";
+import "../styles/Header.css";
 
-export default function Header() {
-  const [hovered, setHovered] = useState(false);
-  const [clicked, setClicked] = useState(false);
-  const hoverStyles = {
-    scale: hovered ? 1.2 : 1, // Adjust the scale factor as needed
-  };
-  const handleClick = () => {
-    setClicked(!clicked);
-  };
+import SideNavWhole from "./MenuComponents/SideNavWhole";
 
+export default function Header(isSmallScreen) {
   return (
     <header>
-      <motion.header
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0, animationDelay: 0.8 }}
-        transition={{ delay: 0.6 }}
-      >
+      <div id="header-top">
         <div className="h-left">
-          <a>javaria brascom</a>
+          <SideNavWhole />
         </div>
         <div className="h-right">
-          <motion.div
-            className="hamburger-icon"
-            onClick={handleClick}
-            onHoverStart={() => setHovered(true)}
-            onHoverEnd={() => setHovered(false)}
-            initial={false}
-            whileHover={hoverStyles}
-          >
-            <a>
-              <Hamburger
-                size={30}
-                toggled={clicked}
-                toggle={setClicked}
-                duration={0.8}
-              />
-            </a>
-          </motion.div>
+          <a>javaria brascom</a>
         </div>
-      </motion.header>
+      </div>
+      <div id="header-bottom"></div>
     </header>
   );
 }

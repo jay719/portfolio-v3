@@ -27,7 +27,7 @@ export default function App() {
     <div className="App">
       <BlendCursor />
       <header>
-        <Header />
+        <Header isSmallScreen={isSmallScreen} />
       </header>
       <Landing />
       <About />

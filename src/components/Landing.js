@@ -13,7 +13,9 @@ export default function Landing() {
       animate={controls}
       transition={{ duration: 0.1, ease: "easeIn" }}
     >
-      <div id="Landing">Landing PAGEEE</div>{" "}
+      <div id="Landing">
+        <h2>Full Stack developer</h2>
+      </div>{" "}
     </motion.div>
   );
 }
