@@ -1,17 +1,12 @@
-import React, { useEffect, useRef, useState } from "react";
-import { motion, useCycle } from "framer-motion";
-import { Navigation } from "./Navigation";
-import MotionMenuBtn from "./MenuBtn";
+import React, { useRef } from "react";
+import { motion } from "framer-motion";
+import { Spin as Hamburger } from "hamburger-react";
 import sidebar from "../../data/sidebar";
+import { Navigation } from "./Navigation";
+// import "../../styles/NavMenu.css";
 
-export default function SideNavWhole() {
-  const [clicked, setClicked] = useState(false);
-  const [isOpen, toggleOpen] = useCycle(false, true);
+const SideNavWhole = ({ clicked, setClicked, isOpen }) => {
   const containerRef = useRef(null);
-  const handleClick = () => {
-    setClicked(!clicked);
-    toggleOpen();
-  };
 
   const variants = {
     open: { opacity: 1, x: 0 },
@@ -26,11 +21,8 @@ export default function SideNavWhole() {
     >
       <motion.div className="background" variants={sidebar} />
       <Navigation />
-      <MotionMenuBtn
-        handleClick={() => handleClick()}
-        clicked={clicked}
-        setClicked={setClicked}
-      />
     </motion.nav>
   );
-}
+};
+
+export default SideNavWhole;

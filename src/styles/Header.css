@@ -1,26 +1,51 @@
 header {
   display: flex;
-  width: 100%;
-  height: fit-content;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
 }
+
 #header-top {
   display: flex;
   width: 100%;
-  height: fit-content;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
+
 #header-bottom {
   display: flex;
-  width: 100%;
-  height: 30%;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+ul {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--accent);
+  border-radius: 5px;
+}
+
+li {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+
+  width: 80%;
+  cursor: pointer;
+  padding: 10px;
+  transition: background 0.3s;
+  border-bottom: 1px solid #fff; /* Add a white border-bottom to each li */
+}
+
+li:hover {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow on hover */
 }
 .h-child {
   margin-left: 5px;
