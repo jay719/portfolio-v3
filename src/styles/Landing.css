@@ -3,7 +3,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-image: url("../images/comp.jpg");
+  /* background-image: url("../images/comp.jpg"); */
   background-size: cover;
   background-position: 30% 50%; /* Adjust these values to position the background off-center */
   height: 100vh;
