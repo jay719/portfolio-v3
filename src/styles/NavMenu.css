@@ -10,25 +10,25 @@
   align-items: center;
 } */
 
-nav {
+/* nav {
   position: absolute;
   top: 0;
-  left: 0; /* Adjusted to be on the right side */
+  left: 0; 
   bottom: 0;
   width: 300px;
-  /* display: none; */
-}
+ 
+} */
 
-nav .background {
+/* nav .background {
   position: absolute;
   top: 0;
-  left: 0; /* Adjusted to be on the right side */
+  left: 0; 
   bottom: 0;
   width: 300px;
   background: #fff;
-  /* z-index: 1000; */
-}
 
+} */
+/* 
 .menu-button {
   outline: none;
   border: none;
@@ -38,23 +38,23 @@ nav .background {
   cursor: pointer;
   position: absolute;
   top: 18px;
-  left: 15px; /* Adjusted to be on the right side */
+  left: 15px; 
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background: transparent;
   z-index: 100;
   display: block;
-}
+} */
 
-nav ul {
+/* nav ul {
   padding: 25px;
   position: absolute;
   top: 100px;
   left: 0;
   width: 230px;
-}
-nav li {
+} */
+/* nav li {
   list-style: none;
   margin-bottom: 20px;
   display: flex;
@@ -62,22 +62,23 @@ nav li {
   cursor: pointer;
 }
 
-nav .icon-placeholder {
+/* nav .icon-placeholder {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   flex: 40px 0;
   margin-right: 20px;
-}
+} */
+*/
 
-nav .text-placeholder {
+/* nav .text-placeholder {
   border-radius: 5px;
   width: 200px;
   height: 20px;
   flex: 1;
-}
+} */
 
-nav .refresh {
+/* nav .refresh {
   padding: 10px;
   position: absolute;
   background: rgba(0, 0, 0, 0.4);
@@ -90,4 +91,5 @@ nav .refresh {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+} */ {
 }

@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from "react";
 import "./styles/App.css";
-import Landing from "./components/Landing";
+import Landing from "./components/landing/Landing";
 import { motion, useCycle } from "framer-motion";
-import About from "./components/About";
+import AboutContainer from "./components/about/AboutContainer";
 import { ReactComponent as MenuIcon } from "./svgs/hamburger-menu.svg";
 import { Divide as Hamburger } from "hamburger-react";
-import Header from "./components/Header";
+import Header from "./components/header/Header";
 import BlendCursor from "./components/Cursor";
 import Projects from "./components/Projects";
-import SideNavWhole from "./components/MenuComponents/SideNavWhole";
+import SideNavWhole from "./components/menu-components/NotUsing/SideNavWhole";
+import NavigationModal from "components/menu-components/NavigationModal";
+import ContactFormCotainer from "components/contact/ContactFormContainer";
+import AppRouter from "AppRouter";
 // import "intersection-observer";
 export default function App() {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
@@ -37,25 +40,18 @@ export default function App() {
   return (
     <div className="App">
       <BlendCursor />
-      <motion.div className="home-layout">
-        <header>
-          <Header
-            isSmallScreen={isSmallScreen}
-            handleClick={() => handleClick()}
-            isOpen={isOpen}
-            clicked={clicked}
-            setClicked={setClicked}
-          />
-        </header>
-        <div>
-          <Landing />
-          <About />
-          <Projects />
-          <footer className="footer">
-            <p>&copy; {date} Javaria Brascom</p>
-          </footer>
-        </div>
-      </motion.div>
+
+      <Header
+        isSmallScreen={isSmallScreen}
+        handleClick={() => handleClick()}
+        isOpen={isOpen}
+        clicked={clicked}
+        setClicked={setClicked}
+      />
+
+      <AppRouter />
+      {/* <NavigationModal isOpen={isOpen} onClose={() => toggleOpen()} /> */}
+
       {/* Render SideNavWhole with the necessary props */}
       {/* {isOpen && (
         <SideNavWhole
@@ -64,6 +60,9 @@ export default function App() {
           isOpen={isOpen}
         />
       )} */}
+      <footer className="footer">
+        <p>&copy; {date} Javaria Brascom</p>
+      </footer>
     </div>
   );
 }

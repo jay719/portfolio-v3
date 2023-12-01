@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { Spin as Hamburger } from "hamburger-react";
-import sidebar from "../../data/sidebar";
+import sidebar from "../../../data/sidebar";
 import { Navigation } from "./Navigation";
 // import "../../styles/NavMenu.css";
 

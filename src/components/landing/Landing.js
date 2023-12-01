@@ -1,6 +1,10 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-import "../styles/Landing.css";
+import "../../styles/Landing.css";
+import "../../styles/App.css";
+import LandingLeft from "./LandingLeft";
+import LandingRight from "./LandingRight";
+// import pdf from "../JavariaBrascomResume.pdf";
 export default function Landing() {
   const controls = useAnimation();
 
@@ -13,9 +17,12 @@ export default function Landing() {
       animate={controls}
       transition={{ duration: 0.1, ease: "easeIn" }}
     >
-      <div id="Landing">
-        <h2>Full Stack developer</h2>
-      </div>{" "}
+      <div className="landing-hero-section">
+        <div className="wrapper landing-hero">
+          <LandingLeft />
+          <LandingRight />
+        </div>
+      </div>
     </motion.div>
   );
 }

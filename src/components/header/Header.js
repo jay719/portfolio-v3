@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import "../styles/Header.css";
+import "../../styles/Header.css";
 // import "../styles/NavMenu.css";
 
 import { motion, useCycle } from "framer-motion";
-import MotionMenuBtn from "./MenuComponents/MenuBtn";
-import sidebar from "../data/sidebar";
-import SideNavWhole from "./MenuComponents/SideNavWhole";
+import MotionMenuBtn from "../menu-components/MenuBtn";
+import sidebar from "../../data/sidebar";
+import SideNavWhole from "../menu-components/NotUsing/SideNavWhole";
 
 const Header = ({ isSmallScreen, handleClick, isOpen }) => {
   const [clicked, setClicked] = useState(false);
@@ -42,7 +42,7 @@ const Header = ({ isSmallScreen, handleClick, isOpen }) => {
           isOpen={isOpen}
         />
       </div> */}
-      <motion.div
+      {/* <motion.div
         id="header-bottom"
         initial={false}
         animate={isOpen ? "open" : "closed"}
@@ -55,7 +55,7 @@ const Header = ({ isSmallScreen, handleClick, isOpen }) => {
           <li>Item 4</li>
           <li>Item 5</li>
         </ul>
-      </motion.div>
+      </motion.div> */}
     </motion.header>
   );
 };
