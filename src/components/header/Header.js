@@ -3,9 +3,9 @@ import "../../styles/Header.css";
 // import "../styles/NavMenu.css";
 
 import { motion, useCycle } from "framer-motion";
-import MotionMenuBtn from "../menu-components/MenuBtn";
+import MotionMenuBtn from "../menu/MenuBtn";
 import sidebar from "../../data/sidebar";
-import SideNavWhole from "../menu-components/NotUsing/SideNavWhole";
+import SideNavWhole from "../menu/NotUsing/SideNavWhole";
 
 const Header = ({ isSmallScreen, handleClick, isOpen }) => {
   const [clicked, setClicked] = useState(false);

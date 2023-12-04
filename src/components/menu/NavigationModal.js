@@ -38,8 +38,6 @@ const NavigationModal = ({ isOpen, onClose }) => {
     visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 0.4 } },
   };
 
-  const size = "lg";
-
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setIsLoaded(true);
@@ -95,23 +93,19 @@ const NavigationModal = ({ isOpen, onClose }) => {
 
             {/* Icons for LinkedIn, GitHub, Medium with text */}
             <motion.div
-              className="icon-row"
+              className="bottom-icon-row"
               variants={iconVariants}
               initial="hidden"
               animate="visible"
             >
               <div className="icon-container">
-                <FontAwesomeIcon
-                  size={size}
-                  icon={faLinkedin}
-                  className="icon"
-                />
+                <FontAwesomeIcon icon={faLinkedin} className="icon" />
               </div>
               <div className="icon-container">
-                <FontAwesomeIcon icon={faGithub} size={size} className="icon" />
+                <FontAwesomeIcon icon={faGithub} className="icon" />
               </div>
               <div className="icon-container">
-                <FontAwesomeIcon size={size} icon={faMedium} className="icon" />
+                <FontAwesomeIcon icon={faMedium} className="icon" />
               </div>
             </motion.div>
           </motion.div>

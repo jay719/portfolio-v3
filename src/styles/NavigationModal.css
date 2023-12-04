@@ -24,6 +24,11 @@
   /* margin: 50px; */
 }
 
+.modal-container,
+.modal-content {
+  z-index: 3;
+}
+
 /* .close-button {
   background: none;
   border: none;
@@ -35,7 +40,7 @@
 
 .nav-column {
 }
-.icon-row {
+.bottom-icon-row {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -50,18 +55,21 @@
   margin-bottom: 10px;
 }
 
+.nav-item-container {
+  padding-bottom: 20px;
+}
 .nav-item-icon {
   margin-right: 10px;
-  size: 20px;
+  font-size: 34px;
 }
 .icon {
-  margin-right: 10px;
-  size: 500px;
+  margin-right: 50px;
+  font-size: 50px;
 }
 
-.nav-item-text,
-.icon-text {
-  font-size: 1rem;
+.nav-item-text {
+  font-size: 34px;
+  margin-left: 10px;
 }
 
 .line {

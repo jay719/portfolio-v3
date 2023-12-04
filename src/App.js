@@ -7,8 +7,8 @@ import AboutContainer from "./components/about/AboutContainer";
 import Header from "./components/header/Header";
 import BlendCursor from "./components/Cursor";
 import Projects from "./components/Projects";
-import SideNavWhole from "./components/menu-components/NotUsing/SideNavWhole";
-import NavigationModal from "components/menu-components/NavigationModal";
+import SideNavWhole from "./components/menu/NotUsing/SideNavWhole";
+import NavigationModal from "components/menu/NavigationModal";
 import ContactFormCotainer from "components/contact/ContactFormContainer";
 import AppRouter from "AppRouter";
 // import "intersection-observer";
@@ -60,7 +60,7 @@ export default function App() {
         />
       )} */}
       <footer className="footer">
-        <p>&copy; {date} Javaria Brascom</p>
+        <p>&copy; {date} Javaria Brascom | Built With React</p>
       </footer>
     </div>
   );
