@@ -16,20 +16,26 @@ const Header = ({ isSmallScreen, handleClick, isOpen }) => {
   };
 
   return (
-    <div className="wrapper header">
-      <div id="header-top">
-        <div className="h-left">
-          <MotionMenuBtn
-            handleClick={handleClick}
-            clicked={clicked}
-            setClicked={setClicked}
-          />
-        </div>
-        <div className="h-right">
-          <a>javaria brascom</a>
+    <motion.header
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.6, animationDelay: 0.8 }}
+    >
+      <div className="wrapper header">
+        <div id="header-top">
+          <div className="h-left">
+            <MotionMenuBtn
+              handleClick={handleClick}
+              clicked={clicked}
+              setClicked={setClicked}
+            />
+          </div>
+          <div className="h-right">
+            <a>javaria brascom</a>
+          </div>
         </div>
       </div>
-    </div>
+    </motion.header>
   );
 };
 

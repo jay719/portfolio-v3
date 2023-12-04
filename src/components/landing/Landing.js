@@ -4,7 +4,6 @@ import "../../styles/Landing.css";
 import "../../styles/App.css";
 import LandingLeft from "./LandingLeft";
 import LandingRight from "./LandingRight";
-// import pdf from "../JavariaBrascomResume.pdf";
 export default function Landing() {
   const controls = useAnimation();
 
@@ -14,7 +13,10 @@ export default function Landing() {
   return (
     <div className="wrapper landing-hero">
       <LandingLeft />
+
       <LandingRight />
+
+      {/* </motion.div> */}
     </div>
   );
 }

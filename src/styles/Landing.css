@@ -34,8 +34,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* Set initial position */
+  transform: translateX(0);
+  /* Add transition for smooth animation */
+  transition: transform 0.3s ease;
 }
-
+.landing-hero-button-wrapper:hover .landing-hero-arrow-wrapper {
+  /* Move to the right on hover */
+  transform: translateX(10px); /* Adjust the value based on your preference */
+}
 .image.landing-hero {
   object-fit: contain;
 }
@@ -64,13 +71,13 @@
   padding: 70px 0 20px;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 
 .landing-hero-content-wrapper {
   width: 60%;
   margin-top: -50px;
-  padding: 100px;
+  /* padding: 100px; */
 }
 .button-text {
   color: #fff;
@@ -105,7 +112,13 @@
     margin-top: 50px;
   }
 }
-
+@media screen and (max-width: 600px) {
+  .landing-hero-content-wrapper {
+    /* width: 60%;
+  margin-top: -50px; */
+    padding: 0px;
+  }
+}
 @media screen and (max-width: 479px) {
   .landing-hero-button-wrapper {
     -webkit-box-orient: vertical;

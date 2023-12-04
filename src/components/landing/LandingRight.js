@@ -10,9 +10,14 @@ const LandingRight = () => {
   }, [controls]);
 
   return (
-    <div className="landing-hero-image-wrapper">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }} // Initial zoom-out state
+      animate={{ opacity: 1, scale: 1 }} // Zoom-in animation
+      transition={{ duration: 0.6 }}
+      className="landing-hero-image-wrapper"
+    >
       <img className="image landing-hero" src={profilePic} alt="profile" />
-    </div>
+    </motion.div>
   );
 };
 
