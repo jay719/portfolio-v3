@@ -1,21 +1,11 @@
 body {
-  font-family: "Montserrat", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #a69074;
-}
-body {
   margin: 0;
   min-height: 100%;
   background-color: #fff;
-  font-family: Plusjakartadisplay, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #333;
-}
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
 
 html {

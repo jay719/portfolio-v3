@@ -12,17 +12,9 @@ export default function Landing() {
     controls.start({ opacity: 1, y: 0 });
   }, [controls]);
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 100 }}
-      animate={controls}
-      transition={{ duration: 0.1, ease: "easeIn" }}
-    >
-      <div className="landing-hero-section">
-        <div className="wrapper landing-hero">
-          <LandingLeft />
-          <LandingRight />
-        </div>
-      </div>
-    </motion.div>
+    <div className="wrapper landing-hero">
+      <LandingLeft />
+      <LandingRight />
+    </div>
   );
 }

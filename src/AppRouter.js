@@ -4,6 +4,15 @@ import "./styles/App.css";
 import Landing from "components/landing/Landing";
 import ContactFormContainer from "components/contact/ContactFormContainer";
 import Services from "components/service/Services";
+import TestimonialSection from "components/testimonials/TestimonialSection";
+import ExperienceContainer from "components/experience/ExperienceContainer";
+import {
+  testimonials,
+  educationList,
+  workExperienceList,
+} from "data/dummyData.js";
+import BlogContainer from "components/blog/BlogContainer";
+import CaseStudiesSection from "components/projects/CaseStudiesSection";
 
 const AppRouter = () => {
   const HomeComponents = () => {
@@ -11,6 +20,14 @@ const AppRouter = () => {
       <>
         <Landing />
         <Services />
+
+        <CaseStudiesSection />
+        <BlogContainer />
+        <ExperienceContainer
+          educationList={educationList}
+          workExperienceList={workExperienceList}
+        />
+        {/* <TestimonialSection testimonials={testimonials} /> */}
       </>
     );
   };

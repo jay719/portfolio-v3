@@ -11,7 +11,7 @@ const Service = ({ imgSrc, heading, paragraph, points }) => {
         <h5>{heading}</h5>
       </div>
       <div className="service-item-paragraph-wrapper">
-        <p className="paragraph _16px">{paragraph}</p>
+        <p className="paragraph _18px">{paragraph}</p>
       </div>
       <div className="service-pointer-wrapper">
         {points.map((point, index) => (

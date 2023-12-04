@@ -16,11 +16,7 @@ const Header = ({ isSmallScreen, handleClick, isOpen }) => {
   };
 
   return (
-    <motion.header
-      initial={{ opacity: 0, y: -50 }}
-      animate={{ opacity: 1, y: 0, animationDelay: 0.8 }}
-      transition={{ delay: 0.6 }}
-    >
+    <div className="wrapper header">
       <div id="header-top">
         <div className="h-left">
           <MotionMenuBtn
@@ -33,30 +29,7 @@ const Header = ({ isSmallScreen, handleClick, isOpen }) => {
           <a>javaria brascom</a>
         </div>
       </div>
-
-      {/* <div id="header-bottom">
-        {" "}
-        <SideNavWhole
-          clicked={clicked}
-          setClicked={setClicked}
-          isOpen={isOpen}
-        />
-      </div> */}
-      {/* <motion.div
-        id="header-bottom"
-        initial={false}
-        animate={isOpen ? "open" : "closed"}
-        variants={navVariants}
-      >
-        <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-          <li>Item 4</li>
-          <li>Item 5</li>
-        </ul>
-      </motion.div> */}
-    </motion.header>
+    </div>
   );
 };
 

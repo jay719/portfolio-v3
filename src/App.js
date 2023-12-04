@@ -3,8 +3,7 @@ import "./styles/App.css";
 import Landing from "./components/landing/Landing";
 import { motion, useCycle } from "framer-motion";
 import AboutContainer from "./components/about/AboutContainer";
-import { ReactComponent as MenuIcon } from "./svgs/hamburger-menu.svg";
-import { Divide as Hamburger } from "hamburger-react";
+
 import Header from "./components/header/Header";
 import BlendCursor from "./components/Cursor";
 import Projects from "./components/Projects";
@@ -50,7 +49,7 @@ export default function App() {
       />
 
       <AppRouter />
-      {/* <NavigationModal isOpen={isOpen} onClose={() => toggleOpen()} /> */}
+      <NavigationModal isOpen={isOpen} onClose={() => toggleOpen()} />
 
       {/* Render SideNavWhole with the necessary props */}
       {/* {isOpen && (

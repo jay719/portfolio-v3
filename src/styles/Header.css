@@ -1,9 +1,9 @@
-header {
+/* .header {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: fit-content;
-}
+} */
 
 #header-top {
   display: flex;
@@ -15,7 +15,7 @@ header {
 
 /* #header-bottom {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;z
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -59,4 +59,8 @@ li:hover {
 .menu-button {
   position: sticky;
   z-index: 300;
+}
+.wrapper.header {
+  padding-top: 40px;
+  padding-bottom: 0px;
 }

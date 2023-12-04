@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import "../../styles/Landing.css";
 const LandingLeft = () => {
   return (
     <div className="landing-hero-content-wrapper">
@@ -27,7 +27,7 @@ const LandingLeft = () => {
           <div className="button-up">
             <div className="button-text">Book a call</div>
           </div>
-          <div className="button-down">
+          <div className="button-behind">
             <div className="button-text no-opacity">Let’s talk now!</div>
           </div>
         </a>
