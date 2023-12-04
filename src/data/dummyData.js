@@ -16,7 +16,7 @@ export const testimonials = [
   // Add more testimonials as needed
 ];
 
-export const caseStudiesHeadingData = {
+export const projectHeadingData = {
   subtext: "PROJECTS",
   heading1: "I bring results",
   heading2: "My clients are proof.",

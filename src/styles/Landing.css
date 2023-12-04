@@ -39,7 +39,7 @@
   /* Add transition for smooth animation */
   transition: transform 0.3s ease;
 }
-.landing-hero-button-wrapper:hover .landing-hero-arrow-wrapper {
+.landing-hero-link-wrapper:hover .landing-hero-arrow-wrapper {
   /* Move to the right on hover */
   transform: translateX(10px); /* Adjust the value based on your preference */
 }

@@ -227,6 +227,15 @@ li {
   font-weight: 300;
 }
 
+footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  padding-bottom: 30px;
+}
+
 @media (max-width: 991px) {
   h1 {
     font-size: 68px;
@@ -256,13 +265,7 @@ li {
   h5 {
     font-size: 19px;
   }
-}
-
-footer {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  padding-bottom: 30px;
+  footer {
+    font-size: 16px;
+  }
 }

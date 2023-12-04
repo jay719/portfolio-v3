@@ -12,7 +12,7 @@ import {
   workExperienceList,
 } from "data/dummyData.js";
 import BlogContainer from "components/blog/BlogContainer";
-import CaseStudiesSection from "components/projects/CaseStudiesSection";
+import ProjectsSection from "components/projects/ProjectsSection";
 
 const AppRouter = () => {
   const HomeComponents = () => {
@@ -21,7 +21,7 @@ const AppRouter = () => {
         <Landing />
         <Services />
 
-        <CaseStudiesSection />
+        <ProjectsSection />
         <BlogContainer />
         <ExperienceContainer
           educationList={educationList}

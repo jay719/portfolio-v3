@@ -9,7 +9,7 @@
 }
 
 .project-card {
-  width: 300px;
+  width: 500px;
   margin: 20px;
   padding: 15px;
   border: 1px solid #ddd;
@@ -34,4 +34,26 @@
   justify-content: space-around;
   max-width: 1200px;
   margin: 0 auto;
+}
+.view-project-div {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  -ms-flex-align: center;
+  align-items: center;
+}
+.view-project-arrow-wrapper {
+  display: flex;
+  width: 15px;
+  height: 15px;
+  margin-left: 20px;
+
+  align-items: center;
+  transform: translateX(0);
+  /* Add transition for smooth animation */
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover .view-project-arrow-wrapper {
+  transform: translateX(15px); /* Adjust the value based on your preference */
 }

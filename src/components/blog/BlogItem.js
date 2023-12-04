@@ -70,12 +70,7 @@ const BlogItem = ({ href, date, time, heading, readText, imgSrc }) => {
           <motion.div className="blog-item-read-the-article-text-wrapper">
             <div className="text-block _18px white">{readText}</div>
           </motion.div>
-          <motion.div
-            className="blog-item-arrow-wrapper"
-            whileHover={{ scale: 1.6 }}
-            whileTap={{ scale: 0.9 }}
-            ref={arrowRef}
-          >
+          <motion.div className="blog-item-arrow-wrapper" ref={arrowRef}>
             <Image src={imgSrc} loading="lazy" alt="" />
           </motion.div>
         </motion.div>
