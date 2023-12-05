@@ -1,3 +1,6 @@
+import compsPic from "../images/project2.jpg";
+import compPic from "../images/comp.jpg";
+
 export const testimonials = [
   {
     image: "https://example.com/image1.jpg",
@@ -26,38 +29,32 @@ export const projectHeadingData = {
 
 export const projectsData = [
   {
-    imageUrl:
-      "https://image.made-in-china.com/43f34j00JMClytohyzcA/Starry-Sky-Aesthetic-Wallpaper-Mural-Living-Room-TV-Background-Wall-Wallpaper.webp",
+    imageUrl: compPic,
     projectTitle: "Soulful Rebrand",
     projectTags: ["Branding"],
   },
   {
-    imageUrl:
-      "https://image.made-in-china.com/43f34j00JMClytohyzcA/Starry-Sky-Aesthetic-Wallpaper-Mural-Living-Room-TV-Background-Wall-Wallpaper.webp",
+    imageUrl: compPic,
     projectTitle: "Datadash Product Design",
     projectTags: ["Product Design"],
   },
   {
-    imageUrl:
-      "https://image.made-in-china.com/43f34j00JMClytohyzcA/Starry-Sky-Aesthetic-Wallpaper-Mural-Living-Room-TV-Background-Wall-Wallpaper.webp",
+    imageUrl: compPic,
     projectTitle: "Soulful Rebrand",
     projectTags: ["Branding"],
   },
   {
-    imageUrl:
-      "https://image.made-in-china.com/43f34j00JMClytohyzcA/Starry-Sky-Aesthetic-Wallpaper-Mural-Living-Room-TV-Background-Wall-Wallpaper.webp",
+    imageUrl: compPic,
     projectTitle: "Datadash Product Design",
     projectTags: ["Product Design"],
   },
   {
-    imageUrl:
-      "https://image.made-in-china.com/43f34j00JMClytohyzcA/Starry-Sky-Aesthetic-Wallpaper-Mural-Living-Room-TV-Background-Wall-Wallpaper.webp",
+    imageUrl: compsPic,
     projectTitle: "Soulful Rebrand",
     projectTags: ["Branding"],
   },
   {
-    imageUrl:
-      "https://image.made-in-china.com/43f34j00JMClytohyzcA/Starry-Sky-Aesthetic-Wallpaper-Mural-Living-Room-TV-Background-Wall-Wallpaper.webp",
+    imageUrl: compsPic,
     projectTitle: "Datadash Product Design",
     projectTags: ["Product Design"],
   },
