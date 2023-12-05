@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./styles/App.css";
-import Landing from "./components/landing/Landing";
 import { motion, useCycle } from "framer-motion";
-import AboutContainer from "./components/about/AboutContainer";
 
 import Header from "./components/header/Header";
 import BlendCursor from "./components/Cursor";
-import Projects from "./components/Projects";
 import SideNavWhole from "./components/menu/NotUsing/SideNavWhole";
 import NavigationModal from "components/menu/NavigationModal";
-import ContactFormCotainer from "components/contact/ContactFormContainer";
 import AppRouter from "AppRouter";
 // import "intersection-observer";
 export default function App() {

@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { projectHeadingData } from "data/dummyData";
 import { useInView } from "react-intersection-observer";
+import ColorButton from "components/ColorButton";
 
 const CaseStudiesHeading = () => {
   const [headingRef, headingInView] = useInView({
@@ -32,16 +33,8 @@ const CaseStudiesHeading = () => {
             {projectHeadingData.heading2}
           </h2>
         </div>
-        <a href="/projects" className="button w-inline-block">
-          <div className="button-up">
-            <div className="button-text">{projectHeadingData.button}</div>
-          </div>
-          <div className="button-behind">
-            <div className="button-text no-opacity">
-              {projectHeadingData.buttonAlt}
-            </div>
-          </div>
-        </a>
+
+        <ColorButton href="/projects" text={projectHeadingData.button} />
       </div>
     </motion.div>
   );

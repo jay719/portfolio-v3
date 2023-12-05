@@ -51,7 +51,7 @@
   align-items: center;
   transform: translateX(0);
   /* Add transition for smooth animation */
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in;
 }
 
 .project-card:hover .view-project-arrow-wrapper {

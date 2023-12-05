@@ -147,7 +147,7 @@ p {
   z-index: 1;
   padding: 20px 30px;
   background-color: #000;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.1s ease-in-out;
 }
 
 .button-behind {
@@ -167,10 +167,11 @@ p {
 
   transform: translate(7px, 7px);
 }
-.button:hover .button-up {
+.button:hover .button-up,
+.button:active .button-up,
+.button.visited .button-up {
   transform: translate(7px, 7px);
 }
-
 /* H6 used for page headings like services blogs */
 
 ul {

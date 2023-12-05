@@ -4,6 +4,7 @@ import "../../styles/Landing.css";
 import { useInView } from "react-intersection-observer";
 
 import pdf from "../../assets/javaria-brascom.pdf";
+import ColorButton from "components/ColorButton";
 
 const LandingLeft = () => {
   // Ref and inView state for heading
@@ -70,14 +71,7 @@ const LandingLeft = () => {
         transition={{ duration: 1, delay: 0.6 }} // Adjust the delay for the button
         ref={buttonLinkRef}
       >
-        <a href="/contact" className="button w-inline-block">
-          <div className="button-up">
-            <div className="button-text">Book a call</div>
-          </div>
-          <div className="button-behind">
-            <div className="button-text no-opacity">Let’s talk now!</div>
-          </div>
-        </a>
+        <ColorButton href="/contact" text="Book a call" />
 
         <a
           href={pdf}

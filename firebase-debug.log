@@ -1,0 +1,50 @@
+[debug] [2023-12-05T00:22:28.547Z] ----------------------------------------------------------------------
+[debug] [2023-12-05T00:22:28.548Z] Command:       /home/jay/.nvm/versions/node/v20.4.0/bin/node /usr/local/bin/firebase deploy --only hosting:javaria-brascom-v2
+[debug] [2023-12-05T00:22:28.548Z] CLI Version:   12.9.1
+[debug] [2023-12-05T00:22:28.548Z] Platform:      linux
+[debug] [2023-12-05T00:22:28.548Z] Node Version:  v20.4.0
+[debug] [2023-12-05T00:22:28.548Z] Time:          Mon Dec 04 2023 17:22:28 GMT-0700 (Mountain Standard Time)
+[debug] [2023-12-05T00:22:28.548Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-05T00:22:28.593Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-05T00:22:28.594Z] > authorizing via signed-in user (javariab17@gmail.com)
+[debug] [2023-12-05T00:22:28.594Z] [iam] checking project javaria-brascom for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-12-05T00:22:28.595Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/javaria-brascom:testIamPermissions [none]
+[debug] [2023-12-05T00:22:28.595Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/javaria-brascom:testIamPermissions x-goog-quota-user=projects/javaria-brascom
+[debug] [2023-12-05T00:22:28.595Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/javaria-brascom:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-05T00:22:28.860Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/javaria-brascom:testIamPermissions 200
+[debug] [2023-12-05T00:22:28.861Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/javaria-brascom:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-05T00:22:28.861Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/javaria-brascom [none]
+[debug] [2023-12-05T00:22:29.057Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/javaria-brascom 200
+[debug] [2023-12-05T00:22:29.058Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/javaria-brascom {"projectId":"javaria-brascom","projectNumber":"438254448360","displayName":"javaria-brascom","name":"projects/javaria-brascom","resources":{"hostingSite":"javaria-brascom"},"state":"ACTIVE","etag":"1_8e0f84f6-b5cb-4862-bef1-4d690e1a023b"}
+[info] 
+[info] === Deploying to 'javaria-brascom'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-12-05T00:22:29.062Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/javaria-brascom-v2/versions [none]
+[debug] [2023-12-05T00:22:29.062Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/javaria-brascom-v2/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-12-05T00:22:30.094Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/javaria-brascom-v2/versions 200
+[debug] [2023-12-05T00:22:30.094Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/javaria-brascom-v2/versions {"name":"projects/438254448360/sites/javaria-brascom-v2/versions/9f38a8c33199f66e","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[javaria-brascom-v2]: beginning deploy... 
+[info] i  hosting[javaria-brascom-v2]: found 12 files in build 
+[debug] [2023-12-05T00:22:30.099Z] [hosting] uploading with 200 concurrency
+[debug] [2023-12-05T00:22:30.351Z] [hosting] hash cache [YnVpbGQ] stored for 12 files
+[debug] [2023-12-05T00:22:30.351Z] [hosting][hash queue][FINAL] {"max":249,"min":3,"avg":25.083333333333332,"active":0,"complete":12,"success":12,"errored":0,"retried":0,"total":12,"elapsed":251}
+[debug] [2023-12-05T00:22:30.351Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/438254448360/sites/javaria-brascom-v2/versions/9f38a8c33199f66e:populateFiles [none]
+[debug] [2023-12-05T00:22:30.351Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/438254448360/sites/javaria-brascom-v2/versions/9f38a8c33199f66e:populateFiles {"files":{"/asset-manifest.json":"c8957ebd507cb229084429c23b3616dc2588060751d1b1cfcb20e892a9813e70","/index.html":"32a2162bc769db6a45469391408f558b8b34eac9b57783788ae7bc5be33ba5de","/static/js/787.85c90ee1.chunk.js":"edc226113a9e9dc51f19cb557532faa69b6719a3bcbd4dee0a6e2916afe25fac","/static/css/main.82c1975c.css":"c4d6525d79bb2f88e7f33df102f923c4425e974d518638f5d4e8dcf2c20f0e15","/static/js/main.b741656e.js.LICENSE.txt":"b3f98bd57d7e6768a2f335367e16d8eb98c3dc8c94897157ae33f8e7de4ef871","/static/js/787.85c90ee1.chunk.js.map":"38fd13d126798a791cbaaaef27530bab70de562d0bccd9a528f553979f71a3aa","/static/media/pf_arrow-right-up-line 6.f64f6382160b5530f02521ca819cfc54.svg":"15e22a7d851c28fe6f9b29152e3b8324cec24822202e4bce95ee63fbfcc1ddee","/static/css/main.82c1975c.css.map":"68fec2286a31e349f5d988b100779bf1ed14b24a460a39123b876e3673e23d65","/static/media/profile.1d89cc3e130ad9071dc2.jpg":"f45ec8c462be4e452bfecdb32c0079561c52128babbc9e411063fad1c7b7c4a9","/static/media/javaria-brascom.36906aeac589d6925a86.pdf":"0b0ebdf2939521e4e02c01e1597b945808915367dfe8e3268ffdd6341fa2b9f1","/static/js/main.b741656e.js":"3185f64e7938f70bd887633a98f44c903a78ec4b8b12907b4131275c680d68a2","/static/js/main.b741656e.js.map":"241627717a379d26c0a7749a7f72bd8c53793881a8d5186334d3b0edabe9ae86"}}
+[debug] [2023-12-05T00:22:30.908Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/438254448360/sites/javaria-brascom-v2/versions/9f38a8c33199f66e:populateFiles 200
+[debug] [2023-12-05T00:22:30.908Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/438254448360/sites/javaria-brascom-v2/versions/9f38a8c33199f66e:populateFiles {"uploadRequiredHashes":["c8957ebd507cb229084429c23b3616dc2588060751d1b1cfcb20e892a9813e70","c4d6525d79bb2f88e7f33df102f923c4425e974d518638f5d4e8dcf2c20f0e15","32a2162bc769db6a45469391408f558b8b34eac9b57783788ae7bc5be33ba5de","3185f64e7938f70bd887633a98f44c903a78ec4b8b12907b4131275c680d68a2","68fec2286a31e349f5d988b100779bf1ed14b24a460a39123b876e3673e23d65","241627717a379d26c0a7749a7f72bd8c53793881a8d5186334d3b0edabe9ae86"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/javaria-brascom-v2/versions/9f38a8c33199f66e/files"}
+[debug] [2023-12-05T00:22:30.909Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/javaria-brascom-v2/versions/9f38a8c33199f66e/files/c8957ebd507cb229084429c23b3616dc2588060751d1b1cfcb20e892a9813e70 [none]
+[debug] [2023-12-05T00:22:30.909Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/javaria-brascom-v2/versions/9f38a8c33199f66e/files/c8957ebd507cb229084429c23b3616dc2588060751d1b1cfcb20e892a9813e70 [stream]
+[debug] [2023-12-05T00:22:30.910Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/javaria-brascom-v2/versions/9f38a8c33199f66e/files/c4d6525d79bb2f88e7f33df102f923c4425e974d518638f5d4e8dcf2c20f0e15 [none]
+[debug] [2023-12-05T00:22:30.910Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/javaria-brascom-v2/versions/9f38a8c33199f66e/files/c4d6525d79bb2f88e7f33df102f923c4425e974d518638f5d4e8dcf2c20f0e15 [stream]
+[debug] [2023-12-05T00:22:30.910Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/javaria-brascom-v2/versions/9f38a8c33199f66e/files/32a2162bc769db6a45469391408f558b8b34eac9b57783788ae7bc5be33ba5de [none]
+[debug] [2023-12-05T00:22:30.910Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/javaria-brascom-v2/versions/9f38a8c33199f66e/files/32a2162bc769db6a45469391408f558b8b34eac9b57783788ae7bc5be33ba5de [stream]
+[debug] [2023-12-05T00:22:30.911Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/javaria-brascom-v2/versions/9f38a8c33199f66e/files/3185f64e7938f70bd887633a98f44c903a78ec4b8b12907b4131275c680d68a2 [none]
+[debug] [2023-12-05T00:22:30.911Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/javaria-brascom-v2/versions/9f38a8c33199f66e/files/3185f64e7938f70bd887633a98f44c903a78ec4b8b12907b4131275c680d68a2 [stream]
+[debug] [2023-12-05T00:22:30.911Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/javaria-brascom-v2/versions/9f38a8c33199f66e/files/68fec2286a31e349f5d988b100779bf1ed14b24a460a39123b876e3673e23d65 [none]
+[debug] [2023-12-05T00:22:30.911Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/javaria-brascom-v2/versions/9f38a8c33199f66e/files/68fec2286a31e349f5d988b100779bf1ed14b24a460a39123b876e3673e23d65 [stream]
+[debug] [2023-12-05T00:22:30.912Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/javaria-brascom-v2/versions/9f38a8c33199f66e/files/241627717a379d26c0a7749a7f72bd8c53793881a8d5186334d3b0edabe9ae86 [none]
+[debug] [2023-12-05T00:22:30.912Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/javaria-brascom-v2/versions/9f38a8c33199f66e/files/241627717a379d26c0a7749a7f72bd8c53793881a8d5186334d3b0edabe9ae86 [stream]
+[debug] [2023-12-05T00:22:30.913Z] [hosting][populate queue][FINAL] {"max":559,"min":559,"avg":559,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":563}
+[debug] [2023-12-05T00:22:30.913Z] [hosting] uploads queued: 6
