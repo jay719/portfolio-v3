@@ -45,6 +45,8 @@
 }
 .image.landing-hero {
   object-fit: contain;
+  padding-bottom: 100px;
+  padding-left: 50px;
 }
 
 .landing-hero-image-wrapper {
@@ -56,13 +58,15 @@
 .hero-gradient-heading {
   display: inline-block;
   padding-right: 3px;
-  background-image: linear-gradient(
-    108deg,
-    #b16cea 8%,
-    #ff5e69 40%,
-    #ff8a56 77%,
-    #ffa84b 91%
+
+  background: linear-gradient(
+    to right,
+    #33c9cc 0%,
+    #5eaa9f 35%,
+    #c05081 70%,
+    #cd295a 100%
   );
+
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -110,6 +114,10 @@
     width: 100%;
     height: 470px;
     margin-top: 50px;
+  }
+  .image.landing-hero {
+    padding-bottom: 0px;
+    padding-left: 0px;
   }
 }
 @media screen and (max-width: 600px) {

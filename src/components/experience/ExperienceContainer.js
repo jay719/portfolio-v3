@@ -86,7 +86,7 @@ const WorkExperienceSection = ({ workExperienceList }) => (
 );
 
 const ExperienceContainer = ({ educationList, workExperienceList }) => (
-  <div className="experience-section">
+  <div className="experience-section" id="Experience">
     <div className="wrapper experience">
       <EducationSection educationList={educationList} />
       <WorkExperienceSection workExperienceList={workExperienceList} />

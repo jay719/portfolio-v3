@@ -2,10 +2,10 @@ import React from "react";
 
 const ContactLeftUI = () => {
   const translations = {
-    contactHeading: "Get in touch",
+    contactHeading: "Let's Connect",
     contactText:
       "Have a project in mind? Looking to partner or work together? Reach out through the form, and I'll get back to you in the next 48 hours.",
-    contactEmail: "hi@thefolio.com",
+    contactEmail: "javariab17@gmail.com",
     contactPhone: "+889-776-899",
     // Add more translation properties as needed
   };
@@ -29,7 +29,7 @@ const ContactLeftUI = () => {
           </div>
           <div className="email-text">{translations.contactEmail}</div>
         </a>
-        <a
+        {/* <a
           href={`tel:${translations.contactPhone}`}
           className="contact-phone w-inline-block"
         >
@@ -42,7 +42,7 @@ const ContactLeftUI = () => {
             />
           </div>
           <div className="email-text">{translations.contactPhone}</div>
-        </a>
+        </a> */}
       </div>
     </div>
   );

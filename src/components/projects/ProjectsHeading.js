@@ -23,11 +23,11 @@ const CaseStudiesHeading = () => {
       transition={{ duration: 0.5, delay: 0.7 }}
       ref={headingRef}
     >
-      <div className="case-study-heading-and-subtext-wrapper">
+      <div className="projects-heading-and-subtext-wrapper">
         <div className="case-studies-subtext-wrapper">
           <h6>{projectHeadingData.subtext}</h6>
         </div>
-        <div className="case-study-heading-wrapper">
+        <div className="projects-heading-wrapper">
           <h2>
             {projectHeadingData.heading1} <br />
             {projectHeadingData.heading2}

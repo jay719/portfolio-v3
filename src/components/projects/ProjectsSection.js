@@ -5,7 +5,7 @@ import { projectsData } from "data/dummyData";
 import "../../styles/Projects.css";
 const ProjectsSection = () => {
   return (
-    <div className="case-studies-section">
+    <div className="projects-section" id="Projects">
       <ProjectsHeading />
       <ProjectContainer projects={projectsData} />
     </div>

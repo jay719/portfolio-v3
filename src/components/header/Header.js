@@ -1,20 +1,17 @@
 import React, { useState } from "react";
 import "../../styles/Header.css";
-// import "../styles/NavMenu.css";
-
-import { motion, useCycle } from "framer-motion";
+import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import MotionMenuBtn from "../menu/MenuBtn";
-import sidebar from "../../data/sidebar";
-import SideNavWhole from "../menu/NotUsing/SideNavWhole";
 
-const Header = ({ isSmallScreen, handleClick, isOpen }) => {
-  const [clicked, setClicked] = useState(false);
-
-  const navVariants = {
-    open: { opacity: 1, x: 0 },
-    closed: { opacity: 0, x: "-100%" },
-  };
-
+const Header = ({
+  isSmallScreen,
+  handleClick,
+  isOpen,
+  clicked,
+  setClicked,
+}) => {
   return (
     <motion.header
       initial={{ opacity: 0, y: -50 }}
@@ -24,14 +21,66 @@ const Header = ({ isSmallScreen, handleClick, isOpen }) => {
       <div className="wrapper header">
         <div id="header-top">
           <div className="h-left">
-            <MotionMenuBtn
-              handleClick={handleClick}
-              clicked={clicked}
-              setClicked={setClicked}
-            />
+            {isSmallScreen ? (
+              <span className="hero-gradient-heading">
+                <Link className="header-title" to="/">
+                  Javaria Brascom(under construction)
+                </Link>
+              </span>
+            ) : (
+              <Link className="header-title" to="/">
+                Javaria Brascom(under construction)
+              </Link>
+            )}
           </div>
+
           <div className="h-right">
-            <a>javaria brascom</a>
+            {isSmallScreen ? (
+              <MotionMenuBtn
+                handleClick={handleClick}
+                clicked={clicked}
+                setClicked={setClicked}
+              />
+            ) : (
+              <span className="hero-gradient-heading">
+                {" "}
+                <ul className="nav-list">
+                  <li>
+                    <h6>
+                      <HashLink smooth to="#Services">
+                        Services
+                      </HashLink>
+                    </h6>
+                  </li>
+                  <li>
+                    <h6>
+                      <HashLink smooth to="#Projects">
+                        Projects
+                      </HashLink>
+                    </h6>
+                  </li>
+                  <li>
+                    <h6>
+                      <HashLink smooth to="#Blog">
+                        Blog
+                      </HashLink>
+                    </h6>
+                  </li>
+                  <li>
+                    <h6>
+                      <HashLink smooth to="#Experience">
+                        Experience
+                      </HashLink>
+                    </h6>
+                  </li>
+                  <li>
+                    <h6>
+                      <Link to="/contact">Contact</Link>
+                    </h6>
+                  </li>
+                </ul>
+              </span>
+            )}
           </div>
         </div>
       </div>

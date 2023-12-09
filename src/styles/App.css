@@ -59,12 +59,12 @@ h6 {
   display: inline-block;
   margin-top: 0px;
   margin-bottom: 0px;
-  background-image: linear-gradient(
-    108deg,
-    #b16cea 8%,
-    #ff5e69 40%,
-    #ff8a56 77%,
-    #ffa84b 91%
+  background: linear-gradient(
+    to right,
+    #33c9cc 0%,
+    #5eaa9f 35%,
+    #c05081 70%,
+    #cd295a 100%
   );
   font-size: 22px;
   line-height: 100%;
@@ -87,6 +87,11 @@ a {
   line-height: 130%;
   font-weight: 500;
   text-decoration: none;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 p {
@@ -134,6 +139,13 @@ p {
   line-height: 100%;
   font-weight: 400;
 }
+
+.text-block._20-px {
+  color: #5c5c5c;
+  font-size: 20px;
+  line-height: 36px;
+}
+
 .text-block._18px.white {
   color: #fff;
 }
@@ -157,14 +169,13 @@ p {
   right: 0%;
   bottom: 0%;
   padding: 20px 30px;
-  background-image: linear-gradient(
-    108deg,
-    #b16cea 8%,
-    #ff5e69 40%,
-    #ff8a56 77%,
-    #ffa84b 91%
+  background: linear-gradient(
+    to right,
+    #33c9cc 0%,
+    #5eaa9f 35%,
+    #c05081 70%,
+    #cd295a 100%
   );
-
   transform: translate(7px, 7px);
 }
 .button:hover .button-up,
@@ -172,6 +183,14 @@ p {
 .button.visited .button-up {
   transform: translate(7px, 7px);
 }
+.button-text {
+  color: #fff;
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: 500;
+  text-decoration: none;
+}
+
 /* H6 used for page headings like services blogs */
 
 ul {
@@ -194,6 +213,123 @@ li {
   color: #666;
   font-size: 20px;
   line-height: 36px;
+}
+.w-input,
+.w-select {
+  display: block;
+  width: 100%;
+  height: 38px;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333333;
+  vertical-align: middle;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+
+.form-field {
+  width: 100%;
+  margin-bottom: 0px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 24px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px none #000;
+  background-color: #f2f6f7;
+  font-size: 16px;
+  line-height: 28px;
+}
+.form-label {
+  margin-bottom: 12px;
+  color: #000;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
+}
+.form-email {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.form-first-and-last-name-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 25px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.form-field.email {
+  padding-left: 52px;
+  background-image: url(https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/mail-icon.png);
+  background-position: 2% 50%;
+  background-size: 30px;
+  background-repeat: no-repeat;
+}
+.form-budget-dropdown {
+  height: 56px;
+  padding-left: 53px;
+  border: 1px none #000;
+  background-color: #f2f6f7;
+  background-image: url("../images/dollarsign.png");
+  background-position: 2% 50%;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.form-brief {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.form-email-wrapper {
+  width: 100%;
+}
+.form-email {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.form-budget-wrapper {
+  width: 100%;
+}
+.form-budget {
+  width: 99.9%;
+  margin-bottom: 25px;
+}
+.form-button {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 20px 30px;
+  background-color: #000;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  color: white;
+}
+.w-form {
+  margin: 0 0 15px;
 }
 
 .wrapper {
@@ -227,7 +363,18 @@ li {
   color: hsla(0, 0%, 100%, 0.7);
   font-weight: 300;
 }
-
+textarea {
+  overflow: auto;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
 footer {
   display: flex;
   width: 100%;
@@ -252,6 +399,25 @@ footer {
   h5 {
     font-size: 21px;
   }
+  .text-block._18px {
+    font-size: 16px;
+  }
+
+  .text-block._18px.white {
+    font-size: 16px;
+  }
+
+  .text-block._18px.project-detail {
+    font-size: 16px;
+  }
+
+  .text-block.preloader-text.left {
+    font-size: 50px;
+  }
+
+  .text-block.preloader-text.right {
+    font-size: 50px;
+  }
 }
 @media (max-width: 479px) {
   h1 {
@@ -271,6 +437,35 @@ footer {
   }
 }
 
+@media screen and (max-width: 479px) {
+  h1 {
+    font-size: 38px;
+  }
+  .text-block._18px {
+    font-size: 14px;
+  }
+
+  .text-block._18px.white {
+    font-size: 14px;
+  }
+
+  .text-block.testimonial-name {
+    font-size: 19px;
+  }
+
+  .text-block._20-px {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .text-block.preloader-text.left {
+    font-size: 35px;
+  }
+
+  .text-block.preloader-text.right {
+    font-size: 35px;
+  }
+}
 @media screen and (max-width: 400px) {
   h1 {
     font-size: 38px;

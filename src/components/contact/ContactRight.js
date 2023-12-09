@@ -1,3 +1,7 @@
+import { faCircleDollarToSlot } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "../../styles/App.css";
+
 import React from "react";
 
 const ContactRightUI = ({
@@ -39,7 +43,7 @@ const ContactRightUI = ({
                 data-name="First Name"
                 placeholder={translations.formFirstNameLabel}
                 id="First-Name"
-                required={false}
+                required={true}
                 value={firstName}
                 onChange={handleFirstNameChange}
               />
@@ -75,7 +79,7 @@ const ContactRightUI = ({
                 data-name="Enter your e-mail"
                 placeholder={translations.formEmailLabel}
                 id="Enter-your-e-mail"
-                required={false}
+                required={true}
                 value={email}
                 onChange={handleEmailChange}
               />
@@ -86,6 +90,7 @@ const ContactRightUI = ({
               <label htmlFor="Budget-2" className="form-label">
                 {translations.formBudgetLabel}
               </label>
+
               <select
                 id="Budget-2"
                 name="Budget"
@@ -114,7 +119,7 @@ const ContactRightUI = ({
                 maxLength={5000}
                 data-name="Detail"
                 placeholder={translations.formBriefLabel}
-                className="form-field budget-text-area w-input"
+                className="form-field budget-text-area "
                 value={detail}
                 onChange={handleDetailChange}
               ></textarea>
@@ -124,7 +129,7 @@ const ContactRightUI = ({
             data-w-id="b6097d5e-4fdf-80f7-56a2-8a9799977237"
             className="button"
           >
-            <div className="button-down">
+            <div className="button-behind">
               <div className="button-text no-opacity">
                 {translations.buttonText}
               </div>
@@ -133,7 +138,7 @@ const ContactRightUI = ({
               type="submit"
               value={translations.submitButtonText}
               data-wait="Please wait..."
-              className="form-button w-button"
+              className="form-button w-button button-up"
             />
           </div>
         </form>

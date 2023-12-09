@@ -9,43 +9,13 @@ import NavigationModal from "components/menu/NavigationModal";
 import AppRouter from "AppRouter";
 // import "intersection-observer";
 export default function App() {
-  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
-  const [clicked, setClicked] = useState(false);
-  const [isOpen, toggleOpen] = useCycle(false, true);
-
   const date = new Date().getFullYear();
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 768);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  const handleClick = () => {
-    setClicked(!clicked);
-    toggleOpen();
-  };
 
   return (
     <div className="App">
       <BlendCursor />
 
-      <Header
-        isSmallScreen={isSmallScreen}
-        handleClick={() => handleClick()}
-        isOpen={isOpen}
-        clicked={clicked}
-        setClicked={setClicked}
-      />
-
       <AppRouter />
-      <NavigationModal isOpen={isOpen} onClose={() => toggleOpen()} />
 
       {/* Render SideNavWhole with the necessary props */}
       {/* {isOpen && (

@@ -1,5 +1,3 @@
-import "../../styles/NavigationModal.css";
-
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,8 +12,10 @@ import {
   faFileAlt,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
+import { HashLink } from "react-router-hash-link";
+import "../../styles/NavigationModal.css";
 
-const NavigationModal = ({ isOpen, onClose }) => {
+const NavigationModal = ({ isOpen, onClose, handleClick }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   const containerVariants = {
@@ -63,29 +63,74 @@ const NavigationModal = ({ isOpen, onClose }) => {
             animate="visible"
             exit="hidden"
           >
-            {/* Navigation links with text */}
             <motion.div
-              className="nav-column"
+              className="top-section"
               variants={columnVariants}
               initial="hidden"
               animate="visible"
             >
-              <div className="nav-item-container">
-                <FontAwesomeIcon icon={faHome} className="nav-item-icon" />
-                <span className="nav-item-text">Home</span>
-              </div>
-              <div className="nav-item-container">
-                <FontAwesomeIcon icon={faUser} className="nav-item-icon" />
-                <span className="nav-item-text">About</span>
-              </div>
-              <div className="nav-item-container">
-                <FontAwesomeIcon icon={faFileAlt} className="nav-item-icon" />
-                <span className="nav-item-text">Resume</span>
-              </div>
-              <div className="nav-item-container">
-                <FontAwesomeIcon icon={faEnvelope} className="nav-item-icon" />
-                <span className="nav-item-text">Contact</span>
-              </div>
+              <ul className="nav-list">
+                <li>
+                  <h6>
+                    <HashLink
+                      className="modal-link"
+                      smooth
+                      to="#Services"
+                      onClick={handleClick}
+                    >
+                      Services
+                    </HashLink>
+                  </h6>
+                </li>
+                <li>
+                  <h6>
+                    <HashLink
+                      className="modal-link"
+                      smooth
+                      to="#Projects"
+                      onClick={handleClick}
+                    >
+                      Projects
+                    </HashLink>
+                  </h6>
+                </li>
+                <li>
+                  <h6>
+                    <HashLink
+                      className="modal-link"
+                      smooth
+                      to="#Blog"
+                      onClick={handleClick}
+                    >
+                      Blog
+                    </HashLink>
+                  </h6>
+                </li>
+                <li>
+                  <h6>
+                    <HashLink
+                      className="modal-link"
+                      smooth
+                      to="#Experience"
+                      onClick={handleClick}
+                    >
+                      Experience
+                    </HashLink>
+                  </h6>
+                </li>
+                <li>
+                  <h6>
+                    <HashLink
+                      className="modal-link"
+                      smooth
+                      to="/contact"
+                      onClick={handleClick}
+                    >
+                      Contact
+                    </HashLink>
+                  </h6>
+                </li>
+              </ul>
             </motion.div>
 
             {/* Horizontal line */}

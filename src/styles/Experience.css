@@ -34,8 +34,8 @@
 }
 
 .experience-time-period-wrapper {
-  min-width: 85px;
-  margin-right: 60px;
+  min-width: 100px;
+  /* margin-right: 60px; */
 }
 
 .experience-time-period-wrapper.work-experience {

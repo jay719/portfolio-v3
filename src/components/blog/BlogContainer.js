@@ -63,7 +63,7 @@ export default function BlogContainer() {
   ];
 
   return (
-    <div className="blog-section">
+    <div className="blog-section" id="Blog">
       <div className="wrapper blog-homepage">
         <BlogHeader />
         <div className="blog-content-wrapper">

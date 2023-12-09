@@ -2,6 +2,7 @@ import React from "react";
 import ContactLeftUI from "./ContactLeft";
 import ContactRightUI from "./ContactRight";
 import "../../styles/Contact.css";
+
 const ContactUI = ({
   firstName,
   lastName,

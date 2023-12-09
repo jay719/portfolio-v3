@@ -7,7 +7,7 @@ const translations = {
   formLastNameLabel: "Last Name",
   formEmailLabel: "Your E-mail",
   formBudgetLabel: "Your Budget",
-  formBudgetOptions: ["1k-3k", "3k-5k", "5k-10k", "More than 10k"],
+  formBudgetOptions: [">1k", "1k-3k", "3k-5k", "5k-10k", "More than 10k"],
   formBriefLabel: "Tell me a bit more what you are looking for?",
   buttonText: "Let’s talk now!",
   submitButtonText: "Submit Now!",

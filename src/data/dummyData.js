@@ -21,8 +21,8 @@ export const testimonials = [
 
 export const projectHeadingData = {
   subtext: "PROJECTS",
-  heading1: "I bring results",
-  heading2: "My clients are proof.",
+  heading1: "Personal vs Professional",
+  heading2: "I love to deliver!",
   button: "View all projects",
   buttonAlt: "Let’s talk now!",
 };
@@ -63,24 +63,24 @@ export const projectsData = [
 
 export const educationList = [
   {
-    title: "Computer Science Degree",
-    subheading: "University of Example",
-    timePeriod: "• 2015 - 2019",
-    link: "https://example.com",
+    title: "Software Developer Program",
+    subheading: "Google x MLT",
+    timePeriod: "• 2019 - Present",
+    link: "https://info.mlt.org/google-mlt-tech-equity-collective-tech-prep",
     icon: "https://example.com/icon.png",
   },
   {
-    title: "Computer Science Degree",
-    subheading: "University of Example",
-    timePeriod: "• 2015 - 2019",
-    link: "https://example.com",
+    title: "Full Stack Web Development Certificate",
+    subheading: "Flatiron School",
+    timePeriod: "• 2020 - 2021",
+    link: "https://flatironschool.com/welcome-to-flatiron-school/",
     icon: "https://example.com/icon.png",
   },
   {
-    title: "Computer Science Degree",
-    subheading: "University of Example",
-    timePeriod: "2015 - 2019",
-    link: "https://example.com",
+    title: "Associate of Science & H.S Diploma",
+    subheading: "Pikes Peak State College & Colorado Early Colleges",
+    timePeriod: "• 2014 - 2020",
+    link: "https://www.pikespeak.edu/",
     icon: "https://example.com/icon.png",
   },
   // More education items...
@@ -89,23 +89,23 @@ export const educationList = [
 export const workExperienceList = [
   {
     title: "Software Developer",
-    subheading: "Example Company",
+    subheading: "Google x MLT",
     timePeriod: "• 2019 - Present",
-    link: "https://example.com",
+    link: "https://info.mlt.org/google-mlt-tech-equity-collective-tech-prep",
     icon: "https://example.com/icon.png",
   },
   {
-    title: "Software Developer",
-    subheading: "Example Company",
-    timePeriod: "• 2019 - Present",
-    link: "https://example.com",
+    title: "Automation Engineer",
+    subheading: "Quantume Metric",
+    timePeriod: "• 2021 - 2023",
+    link: "https://www.quantummetric.com/",
     icon: "https://example.com/icon.png",
   },
   {
-    title: "Software Developer",
-    subheading: "Example Company",
-    timePeriod: "• 2019 - Present",
-    link: "https://example.com",
+    title: "Senior Service Engineer",
+    subheading: "Tek Experts",
+    timePeriod: "• 2019 - 2020",
+    link: "https://tek-experts.com/",
     icon: "https://example.com/icon.png",
   },
   // More work experience items...
