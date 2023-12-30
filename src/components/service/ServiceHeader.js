@@ -48,26 +48,6 @@ const ServiceHeader = () => {
           Designs that solve problems, one product at a time.
         </motion.h2>
       </div>
-      <Link
-        href="/services"
-        className="blog-item-read-the-article-wrapper w-inline-block"
-        variants={variants}
-        initial="hidden"
-        animate={linkInView ? "visible" : "hidden"}
-        transition={{ duration: 0.5, delay: 0.6 }}
-        ref={linkRef}
-      >
-        <div className="blog-item-read-the-article-text-wrapper">
-          <div className="text-block _18px white">View all</div>
-        </div>
-        <div className="blog-item-arrow-wrapper">
-          <Image
-            src="https://assets.website-files.com/5fef5619b640934b33c2385e/5fef584aacad011eafeb61bc_Vector-2.svg"
-            loading="lazy"
-            alt=""
-          />
-        </div>
-      </Link>
     </div>
   );
 };

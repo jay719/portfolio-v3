@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./styles/App.css";
+import "./styles/App.scss";
 import Landing from "components/landing/Landing";
 import ContactFormContainer from "components/contact/ContactFormContainer";
 import Services from "components/service/Services";
@@ -20,14 +20,21 @@ const AppRouter = () => {
   const date = new Date().getFullYear();
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 1000);
+    const mediaQuery = window.matchMedia("(max-width: 1000px)");
+
+    const handleMediaQueryChange = (event) => {
+      setIsSmallScreen(event.matches);
     };
 
-    window.addEventListener("resize", handleResize);
+    // Initial check on component mount
+    setIsSmallScreen(mediaQuery.matches);
+
+    // Listen for changes in the media query
+    mediaQuery.addListener(handleMediaQueryChange);
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      // Remove the listener when the component unmounts
+      mediaQuery.removeListener(handleMediaQueryChange);
     };
   }, []);
 

@@ -15,7 +15,9 @@
 .experience-heading-wrapper {
   margin-bottom: 80px;
 }
-
+.text-block_18px.gradient.experience-item-subheading {
+  font-weight: 600;
+}
 .experience-item-wrapper {
   position: relative;
   display: flex;
@@ -75,7 +77,9 @@
   width: 50px;
   height: 50px;
 }
-
+.experience-item-heading-and-subheading-wrapper {
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+}
 .experience-grey-bottom-border {
   position: absolute;
   left: 0%;

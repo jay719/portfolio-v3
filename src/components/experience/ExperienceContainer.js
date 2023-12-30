@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "../../styles/Experience.css";
-import { ReactComponent as MyIcon } from "../../svgs/pf_arrow-right-up-line 6.svg";
+import { ReactComponent as BlackUpArrow } from "../../svgs/pf_arrow-right-up-line 6.svg";
 import ExperienceBorders from "./ExperienceBorder";
 import { useInView } from "react-intersection-observer";
 
@@ -33,7 +33,9 @@ const ExperienceItem = ({ title, subheading, timePeriod, link, icon }) => {
           <h5 className="experience-item-heading-text">{title}</h5>
         </div>
         <div className="experience-item-subheading-wrapper">
-          <div className="text-block _18px">{subheading}</div>
+          <div className="text-block _18px gradient experience-item-subheading">
+            {subheading}
+          </div>
         </div>
       </div>
       <div className="experience-arrow-and-time-period-wrapper">
@@ -41,7 +43,7 @@ const ExperienceItem = ({ title, subheading, timePeriod, link, icon }) => {
           <div className="text-block _18px">{timePeriod}</div>
         </div>
         <div className="experience-arrow-wrapper">
-          <MyIcon />
+          <BlackUpArrow />
         </div>
       </div>
       <ExperienceBorders />

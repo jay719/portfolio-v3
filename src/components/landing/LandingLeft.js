@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import "../../styles/Landing.css";
 import { useInView } from "react-intersection-observer";
+import { ReactComponent as BlackRightArrow } from "../../svgs/right-arrow.svg";
 
 import pdf from "../../assets/javaria-brascom.pdf";
 import ColorButton from "components/ColorButton";
@@ -53,9 +54,8 @@ const LandingLeft = () => {
         ref={paragraphRef}
       >
         <p className="paragraph _22px">
-          Hi! I’m Javaria, a FullStack Developer based in Colorado. My previous
-          clients range from small startups getting their feet off the ground,
-          to big enterprises!
+          Hi! I'm a FullStack Developer based in Colorado. My previous employers
+          consists of fast growing statups and indusry leading enterprises.
           <br />
         </p>
       </motion.div>
@@ -78,12 +78,7 @@ const LandingLeft = () => {
         >
           <div className="landing-hero-link-text">Download CV </div>
           <div className="landing-hero-arrow-wrapper">
-            <img
-              src="https://assets.website-files.com/5fef5619b640934b33c2385e/5ff019fc559a4200eda62273_Vector.svg"
-              loading="lazy"
-              alt=""
-              className="image contain"
-            />
+            <BlackRightArrow />
           </div>
         </a>
       </motion.div>

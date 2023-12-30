@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import "../../styles/Landing.css";
-import "../../styles/App.css";
+import "../../styles/App.scss";
 import LandingLeft from "./LandingLeft";
 import LandingRight from "./LandingRight";
 export default function Landing() {

@@ -2,7 +2,7 @@ import React from "react";
 import ProjectsHeading from "./ProjectsHeading";
 import ProjectContainer from "./ProjectContainer,";
 import { projectsData } from "data/dummyData";
-import "../../styles/Projects.css";
+import "../../styles/Projects.scss";
 const ProjectsSection = () => {
   return (
     <div className="projects-section" id="Projects">

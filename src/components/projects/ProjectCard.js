@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "../../styles/Projects.css";
+import "../../styles/Projects.scss";
 import { useInView } from "react-intersection-observer";
-
+import { ReactComponent as BlackRightArrow } from "../../svgs/right-arrow.svg";
 const ViewProjectLink = () => {
   return (
     <div className="view-project-div" aria-hidden="true">
@@ -17,14 +17,7 @@ const ViewProjectLink = () => {
         View Project
       </motion.div>
       <div className="view-project-arrow-wrapper">
-        <img
-          src="https://assets.website-files.com/5fef5619b640934b33c2385e/5ff019fc559a4200eda62273_Vector.svg"
-          loading="lazy"
-          alt=""
-          className="view-project-arrow"
-          aria-hidden="true"
-          style={{ filter: "contrast(200%)" }}
-        />
+        <BlackRightArrow className="view-project-arrow" />
       </div>
     </div>
   );
@@ -58,6 +51,7 @@ const ProjectCard = ({ project }) => {
         initial="hidden"
         animate="visible"
         transition={{ duration: 1.5, delay: delayForCard }}
+        className="project-img"
       />
       <motion.div
         className="project-details"
@@ -73,13 +67,17 @@ const ProjectCard = ({ project }) => {
         >
           {project.projectTitle}
         </motion.h3>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.5, delay: delayForCard + 0.6 }}
-        >
-          {project.projectTags}
-        </motion.p>
+
+        {project.projectTags.map((tag, index) => (
+          <motion.p
+            className="project-small-txt"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.5, delay: delayForCard + 0.6 }}
+          >
+            {tag}
+          </motion.p>
+        ))}
       </motion.div>
       <motion.div
         className="view-project-link"

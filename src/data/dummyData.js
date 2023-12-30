@@ -1,5 +1,35 @@
 import compsPic from "../images/project2.jpg";
 import compPic from "../images/comp.jpg";
+import snackPick from "../images/snack-maps.png";
+import goatmaps from "../images/goatmaps.png";
+import toothbrush from "../images/toothbrush.png";
+
+export const blogItemsData = [
+  {
+    href: "https://medium.com/@javariab17/unit-testing-vs-end-end-testing-test-caf%C3%A9-mocha-chai-1f718935cfd1",
+    date: "Jun 18, 2021",
+    time: "3 mins",
+    heading: "Unit Testing vs End-end Testing (Test-Café & Mocha/Chai)",
+    readText: "Read the article",
+    imgSrc: "",
+  },
+  {
+    href: "https://medium.com/@javariab17/setting-up-typescript-for-the-first-time-enabling-errors-a0d1e3c6c083",
+    date: "May 14, 2021",
+    time: "3 mins",
+    heading: "Setting up TypeScript for the First Time/Enabling Errors",
+    readText: "Read the article",
+    imgSrc: "",
+  },
+  {
+    href: "/blog/top-6-free-website-mockup-tools-2021",
+    date: "April 16, 2021",
+    time: "5 mins",
+    heading: "Top 6 free website mockup tools 2021",
+    readText: "Read the article",
+    imgSrc: "",
+  },
+];
 
 export const testimonials = [
   {
@@ -29,35 +59,31 @@ export const projectHeadingData = {
 
 export const projectsData = [
   {
-    imageUrl: compPic,
-    projectTitle: "Soulful Rebrand",
-    projectTags: ["Branding"],
+    imageUrl: toothbrush,
+    projectTitle: "Dental Assitant Mock Up",
+    projectTags: ["HTML", "Javascript", "CSS "],
+    projectLink: "https://coloradodentalassistant-fab47.web.app/",
   },
   {
     imageUrl: compPic,
-    projectTitle: "Datadash Product Design",
-    projectTags: ["Product Design"],
+    projectTitle: "LookalLookup",
+    projectTags: ["React", "Javascript", "CSS "],
+    projectLink: "https://coloradodentalassistant-fab47.web.app/",
+  },
+
+  {
+    imageUrl: snackPick,
+    projectTitle: "Snack Maps",
+    projectTags: ["HTML", "Javascript", "CSS "],
+    projectLink: "https://snack-maps-7.web.app/",
   },
   {
-    imageUrl: compPic,
-    projectTitle: "Soulful Rebrand",
-    projectTags: ["Branding"],
+    imageUrl: goatmaps,
+    projectTitle: "Goat Planning",
+    projectTags: ["V1: React Native", "V2 Flutter"],
+    projectLink: "https://coloradodentalassistant-fab47.web.app/",
   },
-  {
-    imageUrl: compPic,
-    projectTitle: "Datadash Product Design",
-    projectTags: ["Product Design"],
-  },
-  {
-    imageUrl: compsPic,
-    projectTitle: "Soulful Rebrand",
-    projectTags: ["Branding"],
-  },
-  {
-    imageUrl: compsPic,
-    projectTitle: "Datadash Product Design",
-    projectTags: ["Product Design"],
-  },
+
   // Add more projects as needed
 ];
 
@@ -96,7 +122,7 @@ export const workExperienceList = [
   },
   {
     title: "Automation Engineer",
-    subheading: "Quantume Metric",
+    subheading: "Quantum Metric",
     timePeriod: "• 2021 - 2023",
     link: "https://www.quantummetric.com/",
     icon: "https://example.com/icon.png",

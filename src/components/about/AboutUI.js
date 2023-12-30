@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "../../styles/About.css";
-import "../../styles/App.css";
+import "../../styles/App.scss";
 
 const AboutUI = ({
   refTitle,

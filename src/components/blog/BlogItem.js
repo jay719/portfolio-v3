@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Image, Link } from "components/GeneralComponents";
 import { useInView } from "react-intersection-observer";
+import { ReactComponent as WhiteArrowIcon } from "../../svgs/white-arrow.svg";
 
 const BlogItem = ({ href, date, time, heading, readText, imgSrc }) => {
   const [dateRef, dateInView] = useInView({
@@ -71,7 +72,7 @@ const BlogItem = ({ href, date, time, heading, readText, imgSrc }) => {
             <div className="text-block _18px white">{readText}</div>
           </motion.div>
           <motion.div className="blog-item-arrow-wrapper" ref={arrowRef}>
-            <Image src={imgSrc} loading="lazy" alt="" />
+            <WhiteArrowIcon />
           </motion.div>
         </motion.div>
       </Link>

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import ServiceHeader from "./ServiceHeader.js";
 import ServicesGrid from "./ServiceGrid.js";
 import "../../styles/Services.css";
-import "../../styles/App.css";
+import "../../styles/App.scss";
 import { useInView } from "react-intersection-observer";
 
 const Services = () => {

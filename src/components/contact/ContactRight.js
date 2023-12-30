@@ -1,6 +1,6 @@
 import { faCircleDollarToSlot } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "../../styles/App.css";
+import "../../styles/App.scss";
 
 import React from "react";
 

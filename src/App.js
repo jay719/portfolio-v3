@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./styles/App.css";
+import "./styles/App.scss";
 import { motion, useCycle } from "framer-motion";
 
 import Header from "./components/header/Header";

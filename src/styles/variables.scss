@@ -1,0 +1,83 @@
+// variables.scss
+
+// Colors
+$off-white: #f8f8f8;
+$primary-color: #3498db;
+$text-color: #000;
+$background-color: #f2f6f7;
+$gradient-colors: (#33c9cc 0%, #5eaa9f 35%, #c05081 70%, #cd295a 100%);
+$button-background: #000;
+$button-gradient: linear-gradient(
+  to right,
+  #33c9cc 0%,
+  #5eaa9f 35%,
+  #c05081 70%,
+  #cd295a 100%
+);
+$button-hover-transform: translate(7px, 7px);
+
+// Font Sizes
+$h1-font-size: 75px;
+$h2-font-size: 54px;
+$h3-font-size: 36px;
+$h4-font-size: 28px;
+$h5-font-size: 24px;
+$h6-font-size: 22px;
+$paragraph-18px-font-size: 18px;
+$paragraph-22px-font-size: 22px;
+$text-block-16px-font-size: 16px;
+$text-block-18px-font-size: 18px;
+$text-block-20px-font-size: 20px;
+$button-text-font-size: 18px;
+$footer-font-size: 24px;
+
+// Line Heights
+$paragraph-18px-line-height: 28px;
+$paragraph-22px-line-height: 150%;
+$text-block-16px-line-height: 130%;
+$text-block-18px-line-height: 130%;
+$text-block-20px-line-height: 36px;
+$button-text-line-height: 100%;
+
+// Font Weights
+$font-weight-bold: bold;
+$font-weight-normal: normal;
+$button-text-font-weight: 500;
+$paragraph-22px-medium-font-weight: 400;
+
+// Spacings
+$margin-bottom-10px: 10px;
+$margin-top-0px: 0px;
+$margin-bottom-0px: 0px;
+$padding-default: 10px;
+$padding-20px-30px: 20px 30px;
+$padding-8px-12px: 8px 12px;
+$padding-top-28px: 28px;
+$padding-bottom-28px: 28px;
+$padding-left-24px: 24px;
+
+// Background Images
+$email-icon: url(https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/mail-icon.png);
+$dollar-sign-icon: url("../images/dollarsign.png");
+
+// Media Query Breakpoints
+$medium-screen-max-width: 991px;
+$small-screen-max-width: 767px;
+$extra-small-screen-max-width: 479px;
+$extra-extra-small-screen-max-width: 400px;
+$extra-extra-extra-small-screen-max-width: 375px;
+
+$container-max-width: 1200px;
+$padding-large: 40px;
+$padding-small: 20px;
+$border-radius: 8px;
+$box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+$transition-duration: 0.3s;
+$arrow-translate: 15px;
+
+$primary-bg-color: white;
+$border-color: #ddd;
+$hover-bg-color: #f5f5f5;
+$project-image-height: 150px;
+$arrow-size: 15px;
+$small-margin: 20px;

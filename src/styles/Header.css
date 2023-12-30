@@ -92,3 +92,10 @@ li:active {
     flex-direction: row;
   }
 }
+
+@media (max-width: 978px) {
+  .header-title {
+    font-size: 30px;
+    font-weight: 600;
+  }
+}

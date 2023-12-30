@@ -1,0 +1,89 @@
+@import "./variables";
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: $container-max-width;
+  margin: 0 auto;
+  z-index: 1;
+  background-color: $off-white;
+  align-items: stretch;
+}
+
+.projects-heading-wrapper {
+  padding-bottom: $padding-large;
+  padding-top: $padding-large;
+}
+
+.project-card {
+  width: 500px;
+  margin: $small-margin;
+  padding: $padding-small;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  z-index: 1;
+  background-color: $primary-bg-color;
+
+  img {
+    height: $project-image-height;
+    width: 100%;
+    border-radius: $border-radius;
+  }
+
+  &:hover {
+    background-color: $hover-bg-color;
+  }
+}
+
+.project-img {
+  background-color: #808080;
+}
+.project-details {
+  margin-top: $padding-small;
+}
+
+.view-project-div {
+  display: flex;
+  align-items: center;
+}
+
+.view-project-arrow-wrapper {
+  display: flex;
+  width: $arrow-size;
+  height: $arrow-size;
+  margin-left: $small-margin;
+  align-items: center;
+  transform: translateX(0);
+  transition: transform $transition-duration ease-in;
+}
+
+.project-card:hover .view-project-arrow-wrapper {
+  transform: translateX($arrow-translate);
+}
+.project-small-txt {
+  background: $button-gradient;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+  line-height: 1; // Ensure the line height is set to 1 for tight spacing
+  white-space: nowrap; // Prevent line breaks, ensuring tags stay on one line
+}
+
+.project-small-txt:not(:last-child) {
+  margin-right: 8px; // Adjust margin between tags for spacing
+}
+
+// .project-small-txt:hover {
+//   background-color: mix(rgba($button-gradient-start, 0.9), #fff, 10%);
+// }
+
+.text-block._18px.gradient {
+}
