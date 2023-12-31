@@ -1,17 +1,27 @@
 import React, { useState } from "react";
 import "../../styles/Header.css";
 import { HashLink } from "react-router-hash-link";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import MotionMenuBtn from "../menu/MenuBtn";
 
-const Header = ({
+const ContactHeader = ({
   isSmallScreen,
   handleClick,
   isOpen,
   clicked,
   setClicked,
 }) => {
+  const navigate = useNavigate();
+
+  const handleScrollToSection = (sectionId) => {
+    if (sectionId === "contact") {
+      navigate(`/contact`);
+    } else {
+      navigate(`/`);
+      document.getElementById(sectionId)?.scrollIntoView();
+    }
+  };
   return (
     <motion.header
       initial={{ opacity: 0, y: -50 }}
@@ -46,38 +56,26 @@ const Header = ({
                 {" "}
                 <ul className="nav-list">
                   <li>
-                    <h6>
-                      <HashLink smooth to="#Services" className="bold">
-                        Services
-                      </HashLink>
+                    <h6 onClick={() => handleScrollToSection("Services")}>
+                      Services
                     </h6>
                   </li>
                   <li>
-                    <h6>
-                      <HashLink smooth to="#Projects" className="bold">
-                        Projects
-                      </HashLink>
+                    <h6 onClick={() => handleScrollToSection("Projects")}>
+                      Projects
                     </h6>
                   </li>
                   <li>
-                    <h6>
-                      <HashLink smooth to="#Blog" className="bold">
-                        Blog
-                      </HashLink>
+                    <h6 onClick={() => handleScrollToSection("Blog")}>Blog</h6>
+                  </li>
+                  <li>
+                    <h6 onClick={() => handleScrollToSection("Experience")}>
+                      Experience
                     </h6>
                   </li>
                   <li>
-                    <h6>
-                      <HashLink smooth to="#Experience" className="bold">
-                        Experience
-                      </HashLink>
-                    </h6>
-                  </li>
-                  <li>
-                    <h6>
-                      <Link to="/contact" className="bold">
-                        Contact
-                      </Link>
+                    <h6 onClick={() => handleScrollToSection("contact")}>
+                      Contact
                     </h6>
                   </li>
                 </ul>
@@ -90,4 +88,4 @@ const Header = ({
   );
 };
 
-export default Header;
+export default ContactHeader;

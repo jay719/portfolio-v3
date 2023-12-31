@@ -11,6 +11,7 @@ import ProjectsSection from "components/projects/ProjectsSection";
 import Header from "components/header/Header";
 import { useCycle } from "framer-motion";
 import NavigationModal from "components/menu/NavigationModal";
+import ContactHeader from "components/header/ContactHeader";
 
 const AppRouter = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
@@ -43,9 +44,31 @@ const AppRouter = () => {
     toggleOpen();
   };
 
+  const ContactComponents = () => {
+    return (
+      <>
+        <ContactHeader
+          isSmallScreen={isSmallScreen}
+          handleClick={() => handleClick()}
+          isOpen={isOpen}
+          clicked={clicked} // Pass the clicked state to the Header component
+          setClicked={setClicked}
+        />
+        <ContactFormContainer />
+      </>
+    );
+  };
+
   const HomeComponents = () => {
     return (
       <>
+        <Header
+          isSmallScreen={isSmallScreen}
+          handleClick={() => handleClick()}
+          isOpen={isOpen}
+          clicked={clicked} // Pass the clicked state to the Header component
+          setClicked={setClicked}
+        />
         <Landing />
         <Services />
         <ProjectsSection />
@@ -60,16 +83,9 @@ const AppRouter = () => {
 
   return (
     <Router>
-      <Header
-        isSmallScreen={isSmallScreen}
-        handleClick={() => handleClick()}
-        isOpen={isOpen}
-        clicked={clicked} // Pass the clicked state to the Header component
-        setClicked={setClicked}
-      />
       <Routes>
         <Route path="/" element={<HomeComponents />} />
-        <Route path="/contact" element={<ContactFormContainer />} />
+        <Route path="/contact" element={<ContactComponents />} />
       </Routes>
       <NavigationModal
         isOpen={isOpen}

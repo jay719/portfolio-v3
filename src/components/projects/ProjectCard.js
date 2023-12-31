@@ -71,6 +71,7 @@ const ProjectCard = ({ project }) => {
         {project.projectTags.map((tag, index) => (
           <motion.p
             className="project-small-txt"
+            key={index} // Add a unique key prop
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5, delay: delayForCard + 0.6 }}

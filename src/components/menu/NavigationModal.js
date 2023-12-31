@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -13,10 +13,12 @@ import {
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import { HashLink } from "react-router-hash-link";
+import { useNavigate } from "react-router-dom";
 import "../../styles/NavigationModal.css";
 
 const NavigationModal = ({ isOpen, onClose, handleClick }) => {
   const [isLoaded, setIsLoaded] = useState(false);
+  const navigate = useNavigate();
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -43,8 +45,18 @@ const NavigationModal = ({ isOpen, onClose, handleClick }) => {
       setIsLoaded(true);
     }, 500);
 
-    return () => clearTimeout(timeoutId); // Cleanup the timeout on unmount
-  }, []); // Run the effect only once on mount
+    return () => clearTimeout(timeoutId);
+  }, []);
+
+  const handleScrollToSection = (sectionId) => {
+    handleClick();
+    if (sectionId === "contact") {
+      navigate(`/contact`);
+    } else {
+      navigate(`/`);
+      document.getElementById(sectionId)?.scrollIntoView();
+    }
+  };
 
   return (
     <AnimatePresence mode="wait">
@@ -71,63 +83,26 @@ const NavigationModal = ({ isOpen, onClose, handleClick }) => {
             >
               <ul className="nav-list">
                 <li>
-                  <h6>
-                    <HashLink
-                      className="modal-link"
-                      smooth
-                      to="#Services"
-                      onClick={handleClick}
-                    >
-                      Services
-                    </HashLink>
+                  <h6 onClick={() => handleScrollToSection("Services")}>
+                    Services
                   </h6>
                 </li>
                 <li>
-                  <h6>
-                    <HashLink
-                      className="modal-link"
-                      smooth
-                      to="#Projects"
-                      onClick={handleClick}
-                    >
-                      Projects
-                    </HashLink>
+                  <h6 onClick={() => handleScrollToSection("Projects")}>
+                    Projects
                   </h6>
                 </li>
                 <li>
-                  <h6>
-                    <HashLink
-                      className="modal-link"
-                      smooth
-                      to="#Blog"
-                      onClick={handleClick}
-                    >
-                      Blog
-                    </HashLink>
+                  <h6 onClick={() => handleScrollToSection("Blog")}>Blog</h6>
+                </li>
+                <li>
+                  <h6 onClick={() => handleScrollToSection("Experience")}>
+                    Experience
                   </h6>
                 </li>
                 <li>
-                  <h6>
-                    <HashLink
-                      className="modal-link"
-                      smooth
-                      to="#Experience"
-                      onClick={handleClick}
-                    >
-                      Experience
-                    </HashLink>
-                  </h6>
-                </li>
-                <li>
-                  <h6>
-                    <HashLink
-                      className="modal-link"
-                      smooth
-                      to="/contact"
-                      onClick={handleClick}
-                    >
-                      Contact
-                    </HashLink>
+                  <h6 onClick={() => handleScrollToSection("contact")}>
+                    Contact
                   </h6>
                 </li>
               </ul>
