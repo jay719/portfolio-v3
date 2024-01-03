@@ -32,7 +32,7 @@ const ContactHeader = ({
         <div id="header-top">
           <div className="h-left">
             {isSmallScreen ? (
-              <span className="hero-gradient-heading">
+              <span className="highlight">
                 <Link className="header-title" to="/">
                   Javaria Brascom(under construction)
                 </Link>
@@ -52,7 +52,7 @@ const ContactHeader = ({
                 setClicked={setClicked}
               />
             ) : (
-              <span className="hero-gradient-heading">
+              <span className="highlight">
                 {" "}
                 <ul className="nav-list">
                   <li>

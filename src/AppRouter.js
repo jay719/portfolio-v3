@@ -12,6 +12,7 @@ import Header from "components/header/Header";
 import { useCycle } from "framer-motion";
 import NavigationModal from "components/menu/NavigationModal";
 import ContactHeader from "components/header/ContactHeader";
+import TechContainer from "components/technology/TechContainer";
 
 const AppRouter = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
@@ -70,6 +71,7 @@ const AppRouter = () => {
           setClicked={setClicked}
         />
         <Landing />
+        {/* <TechContainer /> */}
         <Services />
         <ProjectsSection />
         <BlogContainer />

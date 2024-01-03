@@ -45,7 +45,7 @@ const ServiceHeader = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
           ref={headingRef}
         >
-          Designs that solve problems, one product at a time.
+          Code that solves customer problems, one applciation at a time.
         </motion.h2>
       </div>
     </div>

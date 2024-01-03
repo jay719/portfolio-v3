@@ -15,40 +15,40 @@ const ServicesGrid = () => {
 
   const servicesData = [
     {
-      imgSrc:
-        "https://assets.website-files.com/5fef5619b640934b33c2385e/5fef584362e74acfa6b75398_Group%2051.svg",
-      heading: "What I can do for you",
+      imgSrc: "https://your-image-url.com",
+      heading: "Tailored Website Solutions",
       paragraph:
-        "Faster, better products that your users love. Here's all the services I provide:",
+        "Crafting unique and custom websites that YOU own to elevate your brand. From initial concept to the final product, I ensure your online presence reflects your business identity.",
       points: [
-        "Design Strategy",
-        "Web and Mobile App Design",
-        "Front-end Development",
+        "Comprehensive Business Website Development",
+        "Cross-Platform Compatibility",
+        "Intuitive User Experience Design",
       ],
     },
     {
-      imgSrc:
-        "https://assets.website-files.com/5fef5619b640934b33c2385e/5fef5843b6409375f7c23f2b_Group%2017.svg",
-      heading: "Applications I'm fluent in",
+      imgSrc: "https://your-image-url.com",
+      heading: "Search Engine Optimization",
       paragraph:
-        "Every designer needs the right tools to do the perfect job. Thankfully, I'm multilingual.",
-      points: ["Sketch", "Webflow", "Figma"],
+        "Optimizing your website to rank higher on search engines. I implement proven SEO strategies to enhance your online visibility and attract quality traffic.",
+      points: [
+        "Strategic Keyword Integration",
+        "Performance-driven Optimization",
+        "Actionable Analytics Insights",
+      ],
     },
     {
-      imgSrc:
-        "https://assets.website-files.com/5fef5619b640934b33c2385e/5fef58435ceaed068dde60ca_Group%2016.svg",
-      heading: "What you can expect",
+      imgSrc: "https://your-image-url.com",
+      heading: "Social Media Integration",
       paragraph:
-        "I design products that are more than pretty. I make them shippable and usable.",
+        "Enhance your brand's online influence through strategic social media engagement. Build a strong online community and connect with your target audience effectively.",
       points: [
-        "Clean and functional",
-        "Device and user friendly",
-        "Efficient and maintainable",
+        "Customized Social Media Strategy",
+        "Engaging Content Creation (Ex: Blog, Newsletter, etc.)",
+        "Interactive Audience Engagement",
       ],
     },
     // Add more services here...
   ];
-
   return (
     <motion.div
       className="services-grid"

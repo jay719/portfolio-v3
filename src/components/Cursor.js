@@ -11,7 +11,7 @@ const BlendCursor = () => {
       innerScale={1}
       outerScale={2}
       outerAlpha={1}
-      hasBlendMode={true}
+      // hasBlendMode={true}
       outerStyle={{
         mixBlendMode: "exclusion",
       }}
@@ -19,7 +19,7 @@ const BlendCursor = () => {
         backgroundColor: "#fff",
         mixBlendMode: "exclusion",
       }}
-      clickables={["p", "span", "h1", "h2", "h6"]}
+      clickables={["p", "span", "h1", "h2", "h6", "svg"]}
     />
   );
 };

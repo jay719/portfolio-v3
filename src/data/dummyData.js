@@ -51,7 +51,7 @@ export const testimonials = [
 
 export const projectHeadingData = {
   subtext: "PROJECTS",
-  heading1: "Personal vs Professional",
+  heading1: "Personal & Professional",
   heading2: "I love to deliver!",
   button: "View all projects",
   buttonAlt: "Let’s talk now!",

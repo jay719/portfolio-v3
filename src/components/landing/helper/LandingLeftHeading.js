@@ -17,11 +17,10 @@ const LandingLeftHeading = ({ headingInView, headingRef }) => {
         transition={{ duration: 0.5, delay: 0.2 }}
         ref={headingRef}
       >
-        I craft <span className="hero-gradient-heading">websites/apps</span>{" "}
-        that are
+        I craft <span className="highlight">websites/apps</span> that are
         <br />
-        <span className="hero-gradient-heading">accessible </span> and{" "}
-        <span className="hero-gradient-heading">user friendly. </span>
+        <span className="highlight">accessible </span> and{" "}
+        <span className="highlight">user friendly. </span>
         <br />
       </motion.h1>
     </div>

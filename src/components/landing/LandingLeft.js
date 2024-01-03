@@ -39,9 +39,9 @@ const LandingLeft = () => {
           transition={{ duration: 0.5, delay: 0.2 }} // Adjust the delay for the heading
           ref={headingRef}
         >
-          I code <span className="hero-gradient-heading">Websites/Apps</span>{" "}
-          that are <span className="hero-gradient-heading"> Accessible </span>{" "}
-          and <span className="hero-gradient-heading"> User Friendly. </span>
+          Crafting <span className="highlight">Accessible</span> and{" "}
+          <span className="highlight">User-Friendly</span> Experiences through{" "}
+          <span className="highlight">Code</span>.
         </motion.h1>
       </div>
 
