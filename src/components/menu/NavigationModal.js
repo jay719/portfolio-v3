@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLinkedin,
-  faGithub,
-  faMedium,
-} from "@fortawesome/free-brands-svg-icons";
+
 import {
   faHome,
   faUser,
@@ -15,6 +11,7 @@ import {
 import { HashLink } from "react-router-hash-link";
 import { useNavigate } from "react-router-dom";
 import "../../styles/NavigationModal.css";
+import BottomIcons from "./BottomIcons";
 
 const NavigationModal = ({ isOpen, onClose, handleClick }) => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -33,11 +30,6 @@ const NavigationModal = ({ isOpen, onClose, handleClick }) => {
   const columnVariants = {
     hidden: { opacity: 0, y: -20 },
     visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 0.2 } },
-  };
-
-  const iconVariants = {
-    hidden: { opacity: 0, y: -20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 0.4 } },
   };
 
   useEffect(() => {
@@ -112,22 +104,7 @@ const NavigationModal = ({ isOpen, onClose, handleClick }) => {
             <div className="line"></div>
 
             {/* Icons for LinkedIn, GitHub, Medium with text */}
-            <motion.div
-              className="bottom-icon-row"
-              variants={iconVariants}
-              initial="hidden"
-              animate="visible"
-            >
-              <div className="icon-container">
-                <FontAwesomeIcon icon={faLinkedin} className="icon" />
-              </div>
-              <div className="icon-container">
-                <FontAwesomeIcon icon={faGithub} className="icon" />
-              </div>
-              <div className="icon-container">
-                <FontAwesomeIcon icon={faMedium} className="icon" />
-              </div>
-            </motion.div>
+            <BottomIcons />
           </motion.div>
         </motion.div>
       )}

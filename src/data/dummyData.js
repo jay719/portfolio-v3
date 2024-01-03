@@ -68,7 +68,7 @@ export const projectsData = [
     imageUrl: compPic,
     projectTitle: "LookalLookup",
     projectTags: ["React", "Javascript", "CSS "],
-    projectLink: "https://coloradodentalassistant-fab47.web.app/",
+    projectLink: "",
   },
 
   {
@@ -81,7 +81,7 @@ export const projectsData = [
     imageUrl: goatmaps,
     projectTitle: "Goat Planning",
     projectTags: ["V1: React Native", "V2 Flutter"],
-    projectLink: "https://coloradodentalassistant-fab47.web.app/",
+    projectLink: "",
   },
 
   // Add more projects as needed

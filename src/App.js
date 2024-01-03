@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./styles/App.scss";
-import { motion, useCycle } from "framer-motion";
 
-import Header from "./components/header/Header";
 import BlendCursor from "./components/Cursor";
-import SideNavWhole from "./components/menu/NotUsing/SideNavWhole";
-import NavigationModal from "components/menu/NavigationModal";
+
 import AppRouter from "AppRouter";
+import BottomIcons from "components/menu/BottomIcons";
 // import "intersection-observer";
 export default function App() {
   const date = new Date().getFullYear();
@@ -26,6 +24,7 @@ export default function App() {
         />
       )} */}
       <footer className="footer">
+        Lets Connect: <BottomIcons />
         <p>&copy; {date} Javaria Brascom | Built With React</p>
       </footer>
     </div>

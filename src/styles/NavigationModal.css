@@ -45,7 +45,8 @@
   flex-direction: row;
   align-items: flex-start;
   width: 100%;
-  justify-content: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
 }
 
 .nav-item-container,
@@ -63,7 +64,7 @@
   font-size: 34px;
 }
 .icon {
-  margin-right: 50px;
+  /* margin-right: 50px; */
   font-size: 50px;
 }
 
@@ -96,6 +97,11 @@
 
 .nav-list li {
   margin-bottom: 10px;
+}
+
+.icon-link {
+  outline: none;
+  color: black;
 }
 
 @media (min-width: 960px) {

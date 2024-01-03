@@ -21,6 +21,7 @@ const ExperienceItem = ({ title, subheading, timePeriod, link, icon }) => {
     <motion.a
       href={link}
       target="_blank"
+      rel="noreferrer"
       className="experience-item-wrapper w-inline-block"
       variants={itemVariants}
       initial="hidden"

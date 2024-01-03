@@ -40,7 +40,7 @@ const LandingLeft = () => {
           ref={headingRef}
         >
           Crafting <span className="highlight">Accessible</span> and{" "}
-          <span className="highlight">User-Friendly</span> Experiences through{" "}
+          <span className="highlight">User-Friendly</span> Experiences Through{" "}
           <span className="highlight">Code</span>.
         </motion.h1>
       </div>

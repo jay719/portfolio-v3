@@ -379,10 +379,20 @@ footer {
   width: 100%;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
-  padding-bottom: 30px;
-}
 
+  padding-bottom: 30px;
+  flex-direction: column;
+}
+footer p {
+  font-size: 16px;
+}
+footer .icon {
+  margin: 0 10px; /* The first value is for the top/bottom margin, and the second is for left/right margin */
+  font-size: 30px;
+}
+footer .bottom-icon-row {
+  justify-content: center;
+}
 .gradient {
   display: inline-block;
   margin-top: 0px;

@@ -87,7 +87,7 @@ const ProjectCard = ({ project }) => {
         animate="visible"
         transition={{ duration: 1.5, delay: delayForCard + 0.9 }}
       >
-        <a href={`/projects/${project.id}`}>
+        <a target="_blank" rel="noreferrer" href={`${project.projectLink}`}>
           <ViewProjectLink />
         </a>
       </motion.div>
